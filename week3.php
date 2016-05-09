@@ -141,9 +141,9 @@ switch($own3DS){
 echo "<br />";
 echo "<span>".$numHoursPlayed."</span><br />";
 $myFile= fopen("voteCount.txt", "r");
-//$numVotes = fread($myFile, filesize("voteCount.txt"));
-//echo "Number of votes: " . $numVotes . "<br />";
-echo readfile("voteCount.txt"));
+$numVotes = fread($myFile, filesize("voteCount.txt"));
+echo "Number of votes: " . $numVotes . "<br />";
+echo readfile("voteCount.txt");
 fclose($myFile);
 ?>
 </body>
