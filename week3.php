@@ -149,6 +149,8 @@ switch($own3DS){
 echo "<br />";
 echo "<span>".$numHoursPlayed."</span><br />";
 echo "Number of votes: " . $numVotes . "<br />";
+session_unset();
+session_destroy();
 ?>
 </body>
 </html>
