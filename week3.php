@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+session_start();
 $isGamer = $_POST["isGamer"];
 $ownsEquipment = $_POST["ownsEquipment"];
 $ownPC = $_POST["ownPC"];
