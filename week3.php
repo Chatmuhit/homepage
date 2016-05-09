@@ -138,7 +138,7 @@ switch($own3DS){
 		break;
 }
 echo "<br />";
-echo $numHoursPlayed."<br />";
+echo "<span>".$numHoursPlayed."</span><br />";
 ?>
 </body>
 </html>
