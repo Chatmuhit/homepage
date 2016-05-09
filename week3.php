@@ -15,8 +15,9 @@ $numHoursPlayed = $_POST["numHoursPlayed"];
 
 $myFile= fopen("voteCount.txt", "r+");
 $numVotes = fgets($myFile);
+print_r($_SESSION);
 if($_SESSION["hasVoted"] != 1){
-	$_SESSION["hasVoted"] = 1;
+	//$_SESSION["hasVoted"] = 1;
 	$numVotes = $numVotes + 1;
 	fwrite($myFile, $numVotes);
 }
