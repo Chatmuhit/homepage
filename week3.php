@@ -20,6 +20,12 @@ switch($_POST["isGamer"]){
 	echo "Else";
 	break;
 	}
+if($isGamer){
+	echo "True";
+	}
+else{
+	echo "False;"
+	}
 ?>
 </body>
 </html>
