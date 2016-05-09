@@ -29,7 +29,7 @@ switch($isGamer){
 		echo "Else";
 		break;
 }
-
+echo "<br />";
 switch($ownsEquipment){
 	case 0:
 		echo "Does not own\n";
@@ -41,6 +41,7 @@ switch($ownsEquipment){
 		echo "Else";
 		break;
 }
+echo "<br />";
 switch($ownPC){
 	case 0:
 		echo "Doesn't own PC\n";
@@ -52,6 +53,7 @@ switch($ownPC){
 		echo "Else";
 		break;
 }
+echo "<br />";
 switch($ownMac){
 	case 0:
 		echo "Doesn't own Mac\n";
@@ -63,6 +65,7 @@ switch($ownMac){
 		echo "Else";
 		break;
 }
+echo "<br />";
 switch($ownMobile){
 	case 0:
 		echo "Doesn't own Mobile\n";
@@ -74,6 +77,7 @@ switch($ownMobile){
 		echo "Else";
 		break;
 }
+echo "<br />";
 switch($ownPS4){
 	case 0:
 		echo "Doesn't own PS4\n";
@@ -85,6 +89,7 @@ switch($ownPS4){
 		echo "Else";
 		break;
 }
+echo "<br />";
 switch($ownVita){
 	case 0:
 		echo "Doesn't own Vita\n";
@@ -96,6 +101,7 @@ switch($ownVita){
 		echo "Else";
 		break;
 }
+echo "<br />";
 switch($ownXbone){
 	case 0:
 		echo "Doesn't own Xbone\n";
@@ -107,6 +113,7 @@ switch($ownXbone){
 		echo "Else";
 		break;
 }
+echo "<br />";
 switch($ownWiiU){
 	case 0:
 		echo "Doesn't own Wii U\n";
@@ -118,6 +125,7 @@ switch($ownWiiU){
 		echo "Else";
 		break;
 }
+echo "<br />";
 switch($own3DS){
 	case 0:
 		echo "Doesn't own 3DS\n";
@@ -129,6 +137,8 @@ switch($own3DS){
 		echo "Else";
 		break;
 }
+echo "<br />";
+echo $numHoursPlayed."<br />";
 ?>
 </body>
 </html>
