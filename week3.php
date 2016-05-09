@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php
-$_SESSION["hasVoted"] = 1;
 $isGamer = $_POST["isGamer"];
 $ownsEquipment = $_POST["ownsEquipment"];
 $ownPC = $_POST["ownPC"];
@@ -12,6 +11,15 @@ $ownXbone = $_POST["ownXbone"];
 $ownWiiU = $_POST["ownWiiU"];
 $own3DS = $_POST["own3DS"];
 $numHoursPlayed = $_POST["numHoursPlayed"];
+
+$myFile= fopen("voteCount.txt", "r+");
+$numVotes = fread($myFile, filesize("voteCount.txt"));
+if($_SESSION["hasVoted"] == 1){
+	$_SESSION["hasVoted"] = 1;
+	$numVotes = $numVotes + 1;
+	fwrite($myFile, $numVotes);
+}
+fclose($myFile);
 ?>
 
 <html>
@@ -140,11 +148,7 @@ switch($own3DS){
 }
 echo "<br />";
 echo "<span>".$numHoursPlayed."</span><br />";
-$myFile= fopen("voteCount.txt", "r");
-$numVotes = fread($myFile, filesize("voteCount.txt"));
 echo "Number of votes: " . $numVotes . "<br />";
-echo readfile("voteCount.txt");
-fclose($myFile);
 ?>
 </body>
 </html>
