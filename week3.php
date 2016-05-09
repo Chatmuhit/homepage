@@ -9,7 +9,7 @@ $ownsEquipment = $_POST["ownsEquipment"];
 <head></head>
 <body>
 <?php
-switch($isGamer){
+switch($_POST["isGamer"]){
 	case true:
 	echo "True";
 	break;
