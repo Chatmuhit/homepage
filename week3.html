@@ -20,7 +20,7 @@
 				Assignments </a></li>
 			</ul>
 			<div class="entry" id="entrytext">
-			<form action="formResults.php" method="post">
+			<form action="week3.php" method="post">
 				<span>Do you play video games (even just a little bit)?</span><br/>
 					<input type="radio" name="isGamer" value="false">No</input><br/>
 					<input type="radio" name="isGamer" value="true">Yes</input><br/>
@@ -28,14 +28,14 @@
 					<input type="radio" name="ownsEquipment" value="false">No</input><br/>
 					<input type="radio" name="ownsEquipment" value="true">Yes</input><br/>
 				<span>If you do own your own games, which platforms do you currently own?</span><br/>
-					<input type="checkbox" name="ownPc" value="pc">PC</input><br/>
-					<input type="checkbox" name="ownMac" value="mac">Apple Computer</input><br/>
-					<input type="checkbox" name="ownMobile" value="mobile">Smartphone/Tablet</input><br/>
-					<input type="checkbox" name="ownPS4" value="ps4">Sony Playstation 4</input><br/>
-					<input type="checkbox" name="ownVita" value="vita">Sony Playstation Portable Vita</input><br/>
-					<input type="checkbox" name="ownXbone" value="xbone">Microsoft XBox One</input><br/>
-					<input type="checkbox" name="ownWiiU" value="wiiU">Nintendo Wii U</input><br/>
-					<input type="checkbox" name="own3DS" value="3ds">Nintendo 3DS</input><br/>
+					<input type="checkbox" name="ownPc" value="true">PC</input><br/>
+					<input type="checkbox" name="ownMac" value="true">Apple Computer</input><br/>
+					<input type="checkbox" name="ownMobile" value="true">Smartphone/Tablet</input><br/>
+					<input type="checkbox" name="ownPS4" value="true">Sony Playstation 4</input><br/>
+					<input type="checkbox" name="ownVita" value="true">Sony Playstation Portable Vita</input><br/>
+					<input type="checkbox" name="ownXbone" value="true">Microsoft XBox One</input><br/>
+					<input type="checkbox" name="ownWiiU" value="true">Nintendo Wii U</input><br/>
+					<input type="checkbox" name="own3DS" value="true">Nintendo 3DS</input><br/>
 				<span>If you do play, about how many hours a day (on average) do you play video games?</span><br/>
 				<select id="numHoursPlayed" onclick="">
 					<option value="0">0-1</option>
@@ -44,7 +44,7 @@
 					<option value="3">5-8</option>
 					<option value="4">8+</option>
 				</select><br/>
-				<button type="submit">Submit</button><br/>
+				<button type="submit">Submit</button>
 				<button type="reset">Reset</button>
 			</form>
 			</div>
