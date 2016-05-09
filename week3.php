@@ -17,7 +17,7 @@ $myFile= fopen("voteCount.txt", "r+");
 $numVotes = fgets($myFile);
 print_r($_SESSION);
 if($_SESSION["hasVoted"] != 1){
-	$_SESSION["hasVoted"] = 1;
+	//$_SESSION["hasVoted"] = 1;
 	$numVotes = $numVotes + 1;
 	fwrite($myFile, $numVotes);
 }
@@ -151,8 +151,8 @@ switch($own3DS){
 echo "<br />";
 echo "<span>".$numHoursPlayed."</span><br />";
 echo "Number of votes: " . $numVotes . "<br />";
-//session_unset();
-//session_destroy();
+session_unset();
+session_destroy();
 ?>
 </body>
 </html>
