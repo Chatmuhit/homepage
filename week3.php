@@ -20,7 +20,7 @@ switch($_POST["isGamer"]){
 	echo "Else";
 	break;
 }
-if($isGamer){
+if($isGamer == true){
 	echo "True";
 	}
 else{
