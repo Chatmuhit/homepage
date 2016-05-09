@@ -14,7 +14,7 @@ $own3DS = $_POST["own3DS"];
 $numHoursPlayed = $_POST["numHoursPlayed"];
 
 $myFile= fopen("voteCount.txt", "r+");
-$numVotes = fread($myFile, filesize("voteCount.txt"));
+$numVotes = fgets($myFile);
 if($_SESSION["hasVoted"] != 1){
 	$_SESSION["hasVoted"] = 1;
 	$numVotes = $numVotes + 1;
